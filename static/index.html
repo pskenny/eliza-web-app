@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- Taken from lab example -->
+<!-- From: https://v4-alpha.getbootstrap.com/getting-started/introduction/ -->
+
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous">
+  <title>Eliza</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Eliza</h1>
+  </div>
+
+  <div class="container">
+    <!-- Adapted from: https://v4-alpha.getbootstrap.com/components/forms/ -->
+    <form id="user-input-form">
+      <div class="form-group">
+        <label for="user-input">Chatbot</label>
+        <input type="text" class="form-control" id="user-input" aria-describedby="user-input-help" placeholder="Enter input">
+        <small id="user-input-help" class="form-text text-muted">Type something here and press submit.</small>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+
+      <div class="form-group">
+        <textarea class="form-control" id="output-area" rows="3" disabled></textarea>
+      </div>
+    </form>
+  </div>
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
+
+  <script>
+
+    // Send AJAX request
+    $("#user-input-form").submit(
+      function (event) {
+        event.preventDefault();
+        $.get('/user-input', {
+            value: $('#user-input').val()
+          })
+          .done(function (data) {
+            $('#output-area').val(data);
+          })
+      });
+  </script>
+</body>
+
+</html>

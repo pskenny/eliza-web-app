@@ -1,0 +1,239 @@
+#####################################################################################
+# This Eliza script is taken and adapted from Charles Haydons Java implementation of
+# Eliza at http://www.chayden.net/eliza/Eliza.html.
+#####################################################################################
+
+key: sorry
+reasmb: Please dont apologise.
+reasmb: Apologies are not necessary.
+reasmb: Ive told you that apologies are not required.
+reasmb: It did not bother me.  Please continue.
+
+key: apologise
+reasmb: Please dont apologise.
+reasmb: Apologies are not necessary.
+reasmb: Ive told you that apologies are not required.
+reasmb: It did not bother me.  Please continue.
+
+key: remember
+reasmb: Do you often think of %v ?
+reasmb: Does thinking of %v bring anything else to mind ?
+reasmb: What else do you recollect ?
+reasmb: Why do you remember %v just now ?
+reasmb: What in the present situation reminds you of %v ?
+reasmb: What is the connection between me and %v ?
+reasmb: What else does %v remind you of ?
+reasmb: Did you think I would forget %v ?
+reasmb: Why do you think I should recall %v now ?
+reasmb: What about %v ?
+reasmb: You mentioned %v ?
+reasmb: How could I forget %v ?
+reasmb: What about %v should I remember ?
+
+key: forget
+reasmb: Can you think of why you might forget %v ?
+reasmb: Why cant you remember %v ?
+reasmb: How often do you think of %v ?
+reasmb: Does it bother you to forget that ?
+reasmb: Could it be a mental block ?
+reasmb: Are you generally forgetful ?
+reasmb: Do you think you are suppressing %v ?
+reasmb: Why do you ask ?
+reasmb: Are you sure you told me ?
+reasmb: Would it bother you if I forgot %v ?
+reasmb: Why should I recall %v just now ?
+reasmb: Tell me more about %v.
+
+key: if
+reasmb: Do you think its likely that %v ?
+reasmb: Do you wish that %v ?
+reasmb: What do you know about %v ?
+reasmb: Really, if %v ?
+reasmb: What would you do if %v ?
+reasmb: But what are the chances that %v ?
+reasmb: What does this speculation lead to ?
+
+key: dreamed
+reasmb: Really, %v ?
+reasmb: Have you ever fantasized %v while you were awake ?
+reasmb: Have you ever dreamed %v before ?
+
+key: dream
+reasmb: What does that dream suggest to you ?
+reasmb: Do you dream often ?
+reasmb: What persons appear in your dreams ?
+reasmb: Do you believe that dreams have something to do with your problem ?
+
+key: perhaps
+reasmb: You dont seem quite certain.
+reasmb: Why the uncertain tone ?
+reasmb: Cant you be more positive ?
+reasmb: You arent sure ?
+reasmb: Dont you know ?
+reasmb: How likely, would you estimate ?
+
+key: name
+reasmb: I am not interested in names.
+reasmb: Ive told you before, I dont care about names -- please continue.
+
+key: hello
+reasmb: How do you do.  Please state your problem.
+reasmb: Hi.  What seems to be your problem ?
+
+key: computer
+reasmb: Do computers worry you ?
+reasmb: Why do you mention computers ?
+reasmb: What do you think machines have to do with your problem ?
+reasmb: Dont you think computers can help people ?
+reasmb: What about machines worries you ?
+reasmb: What do you think about machines ?
+reasmb: You dont think I am a computer program, do you ?
+
+key: am
+reasmb: Do you believe you are %v ?
+reasmb: Would you want to be %v ?
+reasmb: Do you wish I would tell you you are %v ?
+reasmb: What would it mean if you were %v ?
+reasmb: Why do you say am ?
+reasmb: I dont understand that.
+
+key: are
+reasmb: Why are you interested in whether I am %v or not ?
+reasmb: Would you prefer if I werent %v ?
+reasmb: Perhaps I am %v in your fantasies.
+reasmb: Do you sometimes think I am %v ?
+reasmb: Would it matter to you ?
+reasmb: What if I were %v ?
+reasmb: Did you think they might not be %v ?
+reasmb: Would you like it if they were not %v ?
+reasmb: What if they were not %v ?
+reasmb: Are they always %v ?
+reasmb: Possibly they are %v.
+reasmb: Are you positive they are %v ?
+
+key: your
+reasmb: Why are you concerned over my %v ?
+reasmb: What about your own %v ?
+reasmb: Are you worried about someone elses %v ?
+reasmb: Really, my %v ?
+reasmb: What makes you think of my %v ?
+reasmb: Do you want my %v ?
+
+key: was
+reasmb: What if you were %v ?
+reasmb: Do you think you were %v ?
+reasmb: Were you %v ?
+reasmb: What would it mean if you were %v ?
+reasmb: What does  %v  suggest to you ?
+reasmb: Were you really ?
+reasmb: Why do you tell me you were %v now ?
+reasmb: Perhaps I already know you were %v.
+reasmb: Would you like to believe I was %v ?
+reasmb: What suggests that I was %v ?
+reasmb: What do you think ?
+reasmb: Perhaps I was %v.
+reasmb: What if I had been %v ?
+
+key: yes
+reasmb: You seem to be quite positive.
+reasmb: You are sure.
+reasmb: I see.
+reasmb: I understand.
+
+key: no
+reasmb: Are you sure, no one %v ?
+reasmb: Surely someone %v .
+reasmb: Can you think of anyone at all ?
+reasmb: Are you thinking of a very special person ?
+reasmb: Who, may I ask ?
+reasmb: You have a particular person in mind, dont you ?
+reasmb: Who do you think you are talking about ?
+reasmb: Are you saying no just to be negative?
+reasmb: You are being a bit negative.
+reasmb: Why not ?
+reasmb: Why no ?
+
+key: my
+reasmb: Tell me more about your %v.
+reasmb: Who else in your family %v ?
+reasmb: Your %v ?
+reasmb: What else comes to mind when you think of your %v ?
+reasmb: Lets discuss further why your %v.
+reasmb: Earlier you said your %v.
+reasmb: But your %v.
+reasmb: Does that have anything to do with the fact that your %v ?
+reasmb: Your %v ?
+reasmb: Why do you say your %v ?
+reasmb: Does that suggest anything else which belongs to you ?
+reasmb: Is it important to you that your %v ?
+
+key: can
+reasmb: You believe I can %v dont you ?
+reasmb: You want me to be able to %v.
+reasmb: Perhaps you would like to be able to %v yourself.
+reasmb: Whether or not you can %v depends on you more than on me.
+reasmb: Do you want to be able to %v ?
+reasmb: Perhaps you dont want to %v.
+
+key: what
+reasmb: Why do you ask ?
+reasmb: Does that question interest you ?
+reasmb: What is it you really want to know ?
+reasmb: Are such questions much on your mind ?
+reasmb: What answer would please you most ?
+reasmb: What do you think ?
+reasmb: What comes to mind when you ask that ?
+reasmb: Have you asked such questions before ?
+reasmb: Have you asked anyone else ?
+
+key: because
+reasmb: Is that the real reason ?
+reasmb: Dont any other reasons come to mind ?
+reasmb: Does that reason seem to explain anything else ?
+reasmb: What other reasons might there be ?
+
+key: why
+reasmb: Do you believe I dont %v ?
+reasmb: Perhaps I will %v in good time.
+reasmb: Should you %v yourself ?
+reasmb: You want me to %v ?
+reasmb: Do you think you should be able to %v ?
+reasmb: Do you want to be able to %v ?
+reasmb: Do you believe this will help you to %v ?
+reasmb: Have you any idea why you cant %v ?
+
+key: everyone 
+reasmb: Really, %v ?
+reasmb: Surely not %v.
+reasmb: Can you think of anyone in particular ?
+reasmb: Who, for example?
+reasmb: Are you thinking of a very special person ?
+reasmb: Who, may I ask ?
+reasmb: Someone special perhaps ?
+reasmb: You have a particular person in mind, dont you ?
+reasmb: Who do you think youre talking about ?
+
+key: always
+reasmb: Can you think of a specific example ?
+reasmb: When ?
+reasmb: What incident are you thinking of ?
+reasmb: Really, always ?
+
+key: alike
+reasmb: In what way ?
+reasmb: What resemblence do you see ?
+reasmb: What does that similarity suggest to you ?
+reasmb: What other connections do you see ?
+reasmb: What do you suppose that resemblence means ?
+reasmb: What is the connection, do you suppose ?
+reasmb: Could there really be some connection ?
+reasmb: How ?
+
+key: different
+reasmb: How is it different ?
+reasmb: What differences do you see ?
+reasmb: What does that difference suggest to you ?
+reasmb: What other distinctions do you see ?
+reasmb: What do you suppose that disparity means ?
+reasmb: Could there be some connection, do you suppose ?
+reasmb: How ?
